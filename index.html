@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/game.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Group Form</h1>
+      <form id="registrationForm">
+        <div class="nameInputs">
+          <div>
+            <label for="firstName">First name</label>
+            <input type="text" id="fName" placeholder="First name" />
+          </div>
+          <div>
+            <label for="lastName">Last name</label>
+            <input type="text" id="lName" placeholder="Last name" />
+          </div>
+        </div>
+
+        <div class="emailInput">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@company.com" />
+        </div>
+
+        <div class="passwordInput">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="password" />
+        </div>
+
+        <div class="teamSizeInput">
+          <label for="teamSize">Team size</label>
+          <select id="size" name="size">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+
+        <div class="technologyOption">
+          <label for="technology">Technologies</label>
+          <div class="checkboxes">
+            <div class="checkboxLeft">
+              <label><input type="checkbox" />Html</label>
+              <label><input type="checkbox" />Css</label>
+              <label><input type="checkbox" />Javascript</label>
+            </div>
+            <div class="checkboxRight">
+              <label><input type="checkbox" />ReactJS</label>
+              <label><input type="checkbox" />Figma</label>
+              <label><input type="checkbox" />Github</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="game-container">
+      <h1>Guess the Number!</h1>
+      <p id="firstP">I'm thinking of a number between 1 and 100.</p>
+
+      <div id="feedback" class="feedback"></div>
+      <input
+        type="number"
+        id="guessInput"
+        placeholder="Enter your guess"
+        min="1"
+        max="100"
+      />
+      <div id="inputError" class="inputError"></div>
+      <div class="buttons">
+        <button id="guess">Guess</button>
+        <button id="restart">Restart</button>
+      </div>
+
+      <div class="info">
+        <p class="pOne">Score: <span id="score">10</span></p>
+        <p class="pTwo">Attempts: <span id="attemptsNum">0</span> / 10</p>
+      </div>
+
+      <div class="history">
+        <h2>Guess History</h2>
+        <ul id="historyList"></ul>
+      </div>
+    </div>
+
+    <script src="js/form.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>

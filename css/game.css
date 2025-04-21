@@ -1,0 +1,82 @@
+#game-container {
+  min-height: 800px;
+  display: none;
+  padding: 50px;
+  text-align: center;
+  max-width: 800px;
+}
+
+h1 {
+  color: rgb(8, 8, 70);
+}
+
+#firstP {
+  margin-top: 75px;
+}
+
+#guessInput {
+  width: 250px;
+}
+
+#feedback {
+  font-weight: 700;
+  margin: 30px;
+  font-size: 30px;
+}
+
+#inputError {
+  color: rgba(255, 0, 0, 1);
+  font-size: 19px;
+  font-weight: 500;
+  margin: 25px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+#guess,
+#restart {
+  font-size: 25px;
+  color: white;
+  background-color: rgb(225, 15, 15);
+  width: 180px;
+  height: 50px;
+  border: none;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.info {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+}
+
+.pOne,
+.pTwo {
+  font-size: 30px;
+  text-align: left;
+  margin: auto;
+}
+
+h2 {
+  color: green;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+li {
+  font-size: 20px;
+}
+
+strong {
+  color: rgb(33, 93, 198);
+}

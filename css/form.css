@@ -1,0 +1,94 @@
+body {
+  background-color: rgb(251, 243, 243);
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.container {
+  padding-top: 100px;
+  padding-left: 20px;
+}
+.nameInputs {
+  display: flex;
+}
+.nameInputs div {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  input {
+    width: 160px;
+  }
+}
+h1 {
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+label {
+  padding-bottom: 4px;
+  font-size: smaller;
+  letter-spacing: 1px;
+}
+input {
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid #d8d2d2;
+  padding-left: 10px;
+}
+.emailInput {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 363px;
+}
+.passwordInput {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 363px;
+}
+.teamSizeInput {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+select {
+  width: 170px;
+  margin-bottom: 0px;
+  font-size: larger;
+}
+.technologyOption {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.checkboxes {
+  display: flex;
+  gap: 80px;
+}
+.checkboxLeft,
+.checkboxRight {
+  display: flex;
+  flex-direction: column;
+}
+.checkboxes label {
+  display: flex;
+  align-items: center;
+}
+button {
+  margin-top: 50px;
+  width: 360px;
+  height: 40px;
+  background-color: black;
+  border-radius: 8px;
+  border: 1px solid black;
+  color: white;
+}
+.error {
+  color: rgb(241, 77, 77);
+  font-size: 12px;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+#game-container {
+  display: none;
+}
